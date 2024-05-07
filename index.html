@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Horoscope</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sparkles">
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+    </div>
+    
+    <div class="container">
+        <h1>Harry Potter Horoscope</h1>
+
+        <div id="banner" class="banner">
+            <img id="header-image" src="./assets/Sorting Hat.png" alt="Hogwarts" style="width: 100px;" />
+        </div>
+
+        <div id="month-buttons" class="button-group">
+            <h2>Birth Month:</h2>
+        </div>
+
+        <div id="day-buttons" class="button-group">
+            <h2>Birth Day:</h2>
+        </div>
+
+        <button id="get-horoscope" class="button" onclick="getHoroscope()">Get Your Horoscope</button>
+
+        <div id="horoscope-result" class="result"></div>
+
+        <div id="horoscope-story" class="story"></div>
+    </div>
+
+    <div class="second-container">
+        <div class="box">
+            <div class="points-second-container">
+                <h2> House Points</h2>
+                <div class="points">
+                    <div class="house-points" id="gryffindor-points">
+                        <img width="28" height="28" src="https://img.icons8.com/color/48/gryffindor.png"
+                            alt="gryffindor" />
+                        <span> Gryffindor: </span><span id="gryffindor-score">0</span>
+                    </div>
+                    <div class="house-points" id="hufflepuff-points">
+                        <img width="28" height="28" src="https://img.icons8.com/color/48/hufflepuff.png"
+                            alt="hufflepuff" />
+                        <span>Hufflepuff: </span><span id="hufflepuff-score">0</span>
+                    </div>
+                    <div class="house-points" id="ravenclaw-points">
+                        <img width="28" height="28" src="https://img.icons8.com/color/48/ravenclaw.png"
+                            alt="ravenclaw" />
+                        <span>Ravenclaw: </span><span id="ravenclaw-score">0</span>
+                    </div>
+                    <div class="house-points" id="slytherin-points">
+                        <img width="28" height="28" src="https://img.icons8.com/color/48/slytherin.png"
+                            alt="slytherin" />
+                        <span>Slytherin: </span><span id="slytherin-score">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div id="quiz-second-container">
+                <h2>Test Your Knowledge!</h2>
+                <button class="button start-quiz" onclick="startQuiz()">Start Quiz</button>
+                <div id="quiz-question" class="quiz-content"></div>
+                <div id="quiz-choices" class="quiz-content"></div>
+                <div id="quiz-result" class="quiz-content"></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div id="badges-second-container">
+                <h2>Your Badges</h2>
+                <div id="badges"></div>
+            </div>
+        </div>
+
+        <div class="magic-icons">
+            <img class="magic-icon" src="https://img.icons8.com/plasticine/100/harry-potter.png" alt="harry-potter" />
+            <img class="magic-icon" src="https://img.icons8.com/color/48/snitch.png" alt="snitch" />
+        </div>
+    </div>
+    <footer>
+        <p>Made by <a href="https://github.com/DaPandamonium" target="_blank">dapanda</a> ❤️</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
