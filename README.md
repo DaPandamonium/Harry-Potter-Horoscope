@@ -70,4 +70,5 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 ## Author
 
 Made with ❤️ by [dapanda](https://github.com/DaPandamonium)
+
 Codedex Profile [DaPanda](https://www.codedex.io/@DaPanda)
